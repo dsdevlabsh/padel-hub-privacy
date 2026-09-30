@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy — Padel Hub
 ---
 
-**Last updated: 28 September 2026**
+**Last updated: 30 September 2026**
 
 This Privacy Policy describes how Andre D. Lopes Santos ("we", "us", or "our") handles information in connection with the Padel Hub mobile application (the "App").
 
@@ -17,55 +17,72 @@ When you sign in to the App, we collect the authentication credentials you provi
 
 ### Location Data
 
-With your permission, the App accesses your device location to show nearby padel courts and clubs on the map. Location data is used in real time to display relevant results and is not stored on our servers or shared with third parties for marketing purposes. Map display is provided by Mapbox, which may process approximate location and map-usage data to render maps (see their privacy policy below).
+With your permission, and only when you actively ask the App to show what is near you, the App reads your device location so we can sort clubs, games and available courts by distance. The coordinates are sent to our backend to run that distance query and are used only to produce the results you see. They are not written to our database, not kept after the query, and not shared with third parties. The App does not display a map.
 
-You can revoke location permission at any time through your device settings.
+You can revoke location permission at any time through your device settings. Without it the App still works — results are simply not sorted by distance.
 
 ### Player Profile Information
 
-Information you enter about yourself as a player (name, skill level, playing preferences, match history, etc.) is stored in our backend database and associated with your account so you can access it across devices.
+Information you enter about yourself as a player (name, alias, playing hand, preferred position, district, home club and federation number) is stored in our backend database and associated with your account so you can access it across devices.
 
-### Subscription Information
+Your level and ranking are **calculated by us** from the results of the games you play. They are never entered by you and are not editable.
 
-If you subscribe to a paid Padel Hub plan, your purchase is processed by the Apple App Store or Google Play Store. We use RevenueCat to manage subscription status. RevenueCat receives a pseudonymous user identifier and purchase receipt to verify your subscription. We do not have access to your payment details (credit card number, billing address, etc.).
+### Photos
 
-* RevenueCat Privacy Policy: [https://www.revenuecat.com/privacy/](https://www.revenuecat.com/privacy/)
+If you choose to set a profile photo, the image you select is uploaded to our backend storage (Supabase) and associated with your account. Setting a photo is optional, and the App only accesses the single image you pick.
+
+### Game Activity
+
+Games you create or join, invitations, your declared availability, court bookings, recorded results, tournament entries and the resulting ranking history are stored in our backend database and associated with your account.
 
 ## 2. Information Stored on Your Device
 
 Certain preferences and authentication tokens are stored securely on your device using encrypted storage. This data is not accessible to other apps and is deleted when you uninstall the App.
 
-## 3. How We Use Your Information
+## 3. Payments
+
+The App does not offer subscriptions or in-app purchases, and we do not collect or process payment details.
+
+Where a tournament charges an entry fee, the App records the amount owed against your entry so that you and the organiser can see it. The payment itself is handled outside the App. If we later add a payment provider to the App, we will update this policy before enabling the feature.
+
+## 4. How We Use Your Information
 
 We use the information described above solely to:
 
-- Provide and maintain the App features (account management, player profiles, court and club discovery)
-- Verify your subscription status
+- Provide and maintain the App features (account management, player profiles, club and court discovery, games, invitations, results and rankings)
+- Calculate your level and ranking
 - Improve the App functionality and fix bugs
 
-We do not sell, rent, or share your personal information with third parties for marketing purposes.
+We do not sell, rent, or share your personal information with third parties for marketing purposes. Your data does not leave our own backend: the App contains no advertising, analytics, attribution or crash-reporting services.
 
-## 4. Third-Party Services
+## 5. Third-Party Services
 
 The App uses the following third-party services:
 
 | Service | Purpose | Privacy Policy |
 |---------|---------|---------------|
-| Supabase | Authentication and data storage | [https://supabase.com/privacy](https://supabase.com/privacy) |
-| Mapbox | Map display of courts and clubs | [https://www.mapbox.com/legal/privacy](https://www.mapbox.com/legal/privacy) |
-| RevenueCat | Subscription management | [https://www.revenuecat.com/privacy/](https://www.revenuecat.com/privacy/) |
-| Apple App Store | App distribution and in-app purchases | [https://www.apple.com/legal/privacy/](https://www.apple.com/legal/privacy/) |
-| Google Play Store | App distribution and in-app purchases | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
+| Supabase | Authentication, database and file storage | [https://supabase.com/privacy](https://supabase.com/privacy) |
+| Google Sign-In | Optional sign-in method | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
+| Apple App Store | App distribution | [https://www.apple.com/legal/privacy/](https://www.apple.com/legal/privacy/) |
+| Google Play Store | App distribution | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
 
-## 5. Data Retention and Deletion
+All traffic between the App and our backend is encrypted in transit over HTTPS.
 
-You may delete your account at any time from within the App. When you delete your account, all associated data (player profile, match history, preferences) is permanently removed from our servers within 30 days.
+## 6. Data Retention and Deletion
 
-## 6. Children Privacy
+You may request deletion of your account and your data at any time, without installing or opening the App, by following the instructions on our [account deletion page](https://dsdevlabsh.github.io/padel-hub-support/eliminar-conta.html).
 
-The App is intended for general audiences. We do not knowingly collect personal information from children under 13 (or under 16 in the EU/EEA). If you believe a child has provided us with personal information, please contact us so we can delete it promptly.
+We acknowledge requests within 2–3 business days and complete deletion within 30 days. On deletion we remove your authentication account and email address, your player profile (name, alias, photo, district, club and federation number), your ranking and level history, and your invitations, availability, bookings and tournament entries.
 
-## 7. Your Rights Under GDPR (EU / EEA / UK Users)
+Results of games that **other players** took part in are retained with all links to your identity removed (no name, alias, email or photo), because those results form part of those players' own match history and ranking. We also retain records we are legally required to keep for the period required by Portuguese law.
+
+The App does not currently offer account deletion from within the App — its settings screen offers sign-out only.
+
+## 7. Children Privacy
+
+The App is intended for users aged 18 and over. It is not directed at children, and we do not knowingly collect personal information from anyone under 18. If you believe a child has provided us with personal information, please contact us so we can delete it promptly.
+
+## 8. Your Rights Under GDPR (EU / EEA / UK Users)
 
 If you are located in the EU, EEA, or UK, you have the right to:
 
@@ -76,15 +93,15 @@ If you are located in the EU, EEA, or UK, you have the right to:
 
 To exercise these rights, contact us using the details below. You may also lodge a complaint with your national data protection authority. In Portugal, this is the Comissão Nacional de Proteção de Dados (CNPD — [https://www.cnpd.pt](https://www.cnpd.pt)).
 
-## 8. Your Rights Under CCPA / CPRA (California Users)
+## 9. Your Rights Under CCPA / CPRA (California Users)
 
 We do not sell or share personal information as defined by the California Consumer Privacy Act (CCPA) as amended by the CPRA. California residents may request access to or deletion of their personal information by contacting us below.
 
-## 9. Changes to This Policy
+## 10. Changes to This Policy
 
 If we make material changes to this Privacy Policy, we will update it here and revise the "Last updated" date. Where required by law, we will request your consent before enabling features that involve new types of data collection.
 
-## 10. Contact Us
+## 11. Contact Us
 
 If you have questions about this Privacy Policy or would like to exercise any of your rights, please contact:
 
