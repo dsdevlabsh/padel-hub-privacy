@@ -35,6 +35,14 @@ If you choose to set a profile photo, the image you select is uploaded to our ba
 
 Games you create or join, invitations, your declared availability, court bookings, recorded results, tournament entries and the resulting ranking history are stored in our backend database and associated with your account.
 
+### Push Notifications
+
+If you turn notifications on in the App's settings, we ask your device for notification permission and then obtain a **push token** from Expo. The token identifies that one installation of the App on that one device, and it is stored against your account in our backend so we can tell you about invitations, confirmations and results.
+
+To deliver a notification, our backend sends the token and the message text to the Expo push service, which hands it to Apple (APNs) or Google (FCM) for delivery to your device. The token is an installation identifier only: it is never used for advertising, analytics, profiling or tracking across apps.
+
+Turning notifications off, or signing out, deletes the token from our backend, and no notification can be sent to a device without one.
+
 ## 2. Information Stored on Your Device
 
 Certain preferences and authentication tokens are stored securely on your device using encrypted storage. This data is not accessible to other apps and is deleted when you uninstall the App.
@@ -51,9 +59,12 @@ We use the information described above solely to:
 
 - Provide and maintain the App features (account management, player profiles, club and court discovery, games, invitations, results and rankings)
 - Calculate your level and ranking
+- Send you the notifications you have chosen to receive
 - Improve the App functionality and fix bugs
 
-We do not sell, rent, or share your personal information with third parties for marketing purposes. Your data does not leave our own backend: the App contains no advertising, analytics, attribution or crash-reporting services.
+We do not sell, rent, or share your personal information with third parties for marketing purposes. The App contains no advertising, analytics, attribution or crash-reporting services.
+
+Apart from the push token described in section 1 — which is passed to Expo, and by Expo to Apple or Google, only in order to deliver a notification you asked for — your data stays within our own backend.
 
 ## 5. Third-Party Services
 
@@ -63,6 +74,7 @@ The App uses the following third-party services:
 |---------|---------|---------------|
 | Supabase | Authentication, database and file storage | [https://supabase.com/privacy](https://supabase.com/privacy) |
 | Google Sign-In | Optional sign-in method | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
+| Expo | Delivering push notifications, if you turn them on | [https://expo.dev/privacy](https://expo.dev/privacy) |
 | Apple App Store | App distribution | [https://www.apple.com/legal/privacy/](https://www.apple.com/legal/privacy/) |
 | Google Play Store | App distribution | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
 
@@ -72,7 +84,7 @@ All traffic between the App and our backend is encrypted in transit over HTTPS.
 
 You may request deletion of your account and your data at any time, without installing or opening the App, by following the instructions on our [account deletion page](https://dsdevlabsh.github.io/padel-hub-support/eliminar-conta.html).
 
-We acknowledge requests within 2–3 business days and complete deletion within 30 days. On deletion we remove your authentication account and email address, your player profile (name, alias, photo, district, club and federation number), your ranking and level history, and your invitations, availability, bookings and tournament entries.
+We acknowledge requests within 2–3 business days and complete deletion within 30 days. On deletion we remove your authentication account and email address, your player profile (name, alias, photo, district, club and federation number), your ranking and level history, your push token, and your invitations, availability, bookings and tournament entries.
 
 Results of games that **other players** took part in are retained with all links to your identity removed (no name, alias, email or photo), because those results form part of those players' own match history and ranking. We also retain records we are legally required to keep for the period required by Portuguese law.
 
